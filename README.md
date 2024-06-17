@@ -34,7 +34,14 @@ The following resources are deployed:
 
 ## Deployment Instructions
 
-### Step 1
+### Step 1 - Deploy Megaport Cloud Router
 
-From the Megaport portal select "Create MCR" to deploy a Megaport Cloud Router in the desired metro: [Link](https://docs.megaport.com/mcr/creating-mcr/)
+* From the Megaport portal select "Create MCR" to deploy a Megaport Cloud Router in the desired metro: [Link](https://docs.megaport.com/mcr/creating-mcr/)
+
+### Step 2 - Deploy AWS Direct Connect Hosted Connection VXC
+
+* From the Megaport portal select "+Connection" on the newly created MCR. 
+* Select Cloud > AWS > Hosted Connection.
+* Select the AWS Direct Connect location.
+* Follow the workflow to deploy the AWS Direct Connect Hosted Connection VXC: [Link](https://docs.megaport.com/cloud/mcr/aws/#creating-a-hosted-connection)
 
