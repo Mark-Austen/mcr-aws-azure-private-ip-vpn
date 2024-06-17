@@ -25,3 +25,13 @@ The following resources are deployed:
 * Azure VNet Gateway Subnet
 * Azure Local Gateway
 * Azure VPN Virtual Gateway Connections
+
+### Prerequisites
+
+* Megaport acount
+* AWS account
+* Azure account
+
+### Deployment Instructions
+
+* From the Megaport portal select "Create MCR" to deploy a Megaport Cloud Router in the desired metro: [Link](https://docs.megaport.com/mcr/creating-mcr/)
