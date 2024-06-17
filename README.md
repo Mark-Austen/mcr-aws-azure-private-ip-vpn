@@ -17,10 +17,12 @@ The following resources are deployed:
 * AWS Transit Gateway attachment to VPC
 * AWS Transit Gateway attachment to Direct Connect Gateway
 * AWS Transit Gateway attachment to VPN
-* Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
 * Azure Resource Group
 * Azure ExpressRoute Circuit
 * Azure ExpressRoute Virtual Gateway
 * Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
 * Azure VNet
 * Azure VNet Subnet
+* Azure VNet Gateway Subnet
+* Azure Local Gateway
+* Azure VPN Virtual Gateway Connections
