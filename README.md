@@ -56,6 +56,7 @@ The following resources are deployed:
 * From the AWS console search for **Transit gateways** in the search bar.
 * Select **Transit gateways**.
 * Select **Create transit gateways**.
+* Ensure the correct region is selected.
 * Enter a Name tag and Transit gateway CIDR block, e.g. 10.255.1.0/24.
 * Select **Create transit gateway**.
 
