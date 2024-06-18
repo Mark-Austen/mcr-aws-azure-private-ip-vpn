@@ -153,7 +153,7 @@ The following resources are deployed:
 * Select **ExpressRoute circuit** created in step 9.
 * Select **Review + create** > **Create**.
 
-### Step 12 - Confirm MCR has recevied Azure Prefixes
+### Step 13 - Confirm MCR has recevied Azure Prefixes
 
 * From the Megaport portal select select the MCR Looking Glass.
 * The route table should contain the Azure VNet CIDR, in this example 10.2.0.0/16.
