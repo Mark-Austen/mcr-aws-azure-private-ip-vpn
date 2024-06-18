@@ -106,7 +106,7 @@ The following resources are deployed:
 
 * From the Azure portal search for **ExpressRoute** in the search bar.
 * Select **ExpressRoute circuits**.
-* Select ** Create ExpressRoute**.
+* Select **Create ExpressRoute**.
 * Select **Subscription**.
 * Select **Resource Group**.
 * Select **Region**, in this example - Australia East.
