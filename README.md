@@ -58,7 +58,7 @@ The following resources are deployed:
 * Select **Transit gateways**.
 * Select **Create transit gateways**.
 * Enter a Name tag and Transit gateway CIDR block, e.g. 10.255.1.0/24.
-* Seleect **Create transit gateway**.
+* Select **Create transit gateway**.
 
 
 
