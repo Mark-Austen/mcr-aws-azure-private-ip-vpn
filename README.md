@@ -67,7 +67,7 @@ The following resources are deployed:
 
 ### Step 5 - Megaport Cloud Router
 
-* From the Megaport portal select "Create MCR" to deploy a Megaport Cloud Router in the desired metro: [Link](https://docs.megaport.com/mcr/creating-mcr/)
+* From the Megaport portal select **Create MCR** to deploy a Megaport Cloud Router in the desired metro: [Link](https://docs.megaport.com/mcr/creating-mcr/)
 
 ### Step 6 - Megaport Virtual Cross Connect (VXC) to AWS Direct Connect Hosted Connection
 
