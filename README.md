@@ -59,5 +59,16 @@ The following resources are deployed:
 * Enter a Name tag and Transit gateway CIDR block, e.g. 10.255.1.0/24.
 * Select **Create transit gateway**.
 
+### Step 5 - AWS Direct Connect Gateway to Transit Gateway association
+
+* From the AWS console search for **Direct Connect** in the search bar.
+* Select **Direct Connect**.
+* Select **Direct Connect gateway**.
+* Select Direct Connect gateway created in step 3.
+* Select Gateway associations > Associated gateway.
+* Select the Transit gateway created in step 4.
+* Enter the AWS VPC CIDR in **Allowed Prefixes**.
+
+
 
 
