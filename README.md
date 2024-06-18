@@ -57,7 +57,7 @@ The following resources are deployed:
 * Select **Transit gateways**.
 * Select **Create transit gateways**.
 * Ensure the correct region is selected.
-* Enter a Name tag and Transit gateway CIDR block, e.g. 10.255.1.0/24.
+* Enter a Name tag and Transit gateway CIDR block, e.g. 10.254.1.0/24.
 * Select **Create transit gateway**.
 
 ### Step 5 - AWS Direct Connect Gateway to Transit Gateway association
