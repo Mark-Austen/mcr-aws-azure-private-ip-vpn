@@ -81,4 +81,4 @@ The following resources are deployed:
 * Select **Connections**.
 * Select Virtual Cross Connect (VXC) created in step 6.
 * Select **Accept** > **Confirm**.
-* After State changes to available select **Create virtual interface**.
+* After state changes to available select **Create virtual interface**.
