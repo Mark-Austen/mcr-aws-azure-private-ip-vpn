@@ -82,3 +82,13 @@ The following resources are deployed:
 * Select Virtual Cross Connect (VXC) created in step 6.
 * Select **Accept** > **Confirm**.
 * After state changes to available select **Create virtual interface**.
+* Select Virtual interface type **Transit**.
+* Enter **Virtual interface name**.
+* Select accepted **Connection**.
+* Select **Direct Connect gateway** deployed in step 1.
+* Enter **BGP ASN** of the MCR, in this example ASN 133937.
+* Select **Additional settings**.
+* Enter **Your router peer ip**, in this example the IP address of the MCR - 192.168.100.1/30.
+* Enter **Amazon router peer ip**, in this example - 192.168.100.2/30.
+* Select **Create virtual interface**.
+* Select the Virtual interface from the interface list, the state will transition to **available** and BGP status to **up**.
