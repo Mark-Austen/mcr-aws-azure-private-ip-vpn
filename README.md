@@ -206,5 +206,9 @@ The following resources are deployed:
 * Select the **Customer gateway ID** created in step 16.
 * Select **Outside IP address type** - PrivateIpv4.
 * Select the **Transport transit gateway attachment ID** created in step step 3.
-* 
+* Expand **Tunnel 1 options** > enter **Inside IPv4 CIDR for tunnel 1**, in this example - 169.254.21.0/30 (AWS takes lower IP).
+* Enter **Pre-shared key for tunnel 1**.
+* Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example - 169.254.22.0/30 (AWS takes lower IP).
+* Enter **Pre-shared key for tunnel 2**.
+* Select **Create VPN connection**.
 
