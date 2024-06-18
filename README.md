@@ -125,7 +125,7 @@ The following resources are deployed:
 * From the Megaport portal select **+Connection** on the newly created MCR.
 * Follow the workflow to deploy the Azure ExpressRoute VXC: [Link](https://docs.megaport.com/cloud/megaport/microsoft/#creating-an-expressroute-connection)
 
-### Step 11 - Azure ExpressRoute Gateway
+### Step 11 - Azure ExpressRoute Virtual Network Gateway
 
 * From the Azure portal search for **Virtual network gateways** in the search bar.
 * Select **Virtual network gateways** > **Create virtual network gateway**.
@@ -158,5 +158,24 @@ The following resources are deployed:
 * From the Megaport portal select select the MCR Looking Glass.
 * The route table should contain the Azure VNet CIDR, in this example 10.2.0.0/16.
 
+### Step 14 - Azure VPN Virtual Network Gateway
 
+* From the Azure portal search for **Virtual network gateways** in the search bar.
+* Select **Virtual network gateways** > **+Create**.
+* Enter a **Name**.
+* Select a **Region**, in this example - Australia East.
+* Select **Gateway type** > **VPN**.
+* Select **SKU**, in this example - VpnGw1. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
+* Select **Generation**, in this example **Generation 1**.
+* Select **Virtual network**.
+* Enter a **Public IP Address** name.
+* Select **Enable active-active mode** Disabled.
+* Select **Configure BGP** Enabled.
+* In this example use default BGP ASN 65515.
+* Enter two **Custom Azure APIPA BGP IP address** - 169.254.21.2, and 169.254.22.2.
+* Select **Review + create** > **Create**.
+
+### Step 14 - AWS Customer Gateway
+
+*
 
