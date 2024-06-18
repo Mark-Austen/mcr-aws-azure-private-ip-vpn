@@ -23,6 +23,9 @@ The following resources are deployed:
 
 ## Prerequisites
 
+* Megaport account
+* AWS account
+* Azure subscription
 * Existing AWS VPC and subnet: [Link](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html#create-vpc-and-other-resources)
 * Existing Azure VNet and subnet: [Link](https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 
@@ -98,3 +101,18 @@ The following resources are deployed:
 
 * From the Megaport portal select select the MCR Looking Glass.
 * The route table should contain the AWS VPC CIDR, in this example 10.1.0.0/16, and the Transit gateway CIDR, in this example 10.254.1.0/24.
+
+### Step 9 - Deploy Azure ExpressRoute Circuit
+
+* From the Azure portal search for **ExpressRoute** in the search bar.
+* Select **ExpressRoute circuits**.
+* Select ** Create ExpressRoute**.
+* Select **Subscription**.
+* Select **Resource Group**.
+* Select **Region**, in this example - Australia East.
+* Enter **Circuit name**.
+* Select Megaport in the **Provider** box.
+* Select **Peering location**, in this example - Sydney.
+* Select **Bandwidth**, in this example - 50Mbps.
+* Leave SKU as **Standard**, and billing model as **Metered**.
+* Select **Review + create** > **Create**.
