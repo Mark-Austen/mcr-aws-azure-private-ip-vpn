@@ -67,7 +67,7 @@ The following resources are deployed:
 * Select Direct Connect gateway created in step 3.
 * Select Gateway associations > Associated gateway.
 * Select the Transit gateway created in step 4.
-* Enter the AWS VPC CIDR in **Allowed Prefixes**.
+* Enter the AWS VPC CIDR and the Transit gateway CIDR in **Allowed Prefixes**.
 
 
 
