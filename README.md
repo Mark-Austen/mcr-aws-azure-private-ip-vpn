@@ -8,18 +8,19 @@ The following resources are deployed:
 * AWS Direct Connect Gateway
 * AWS Direct Connect Transit VIF
 * AWS Transit Gateway
+* AWS Customer Gateway
+* AWS Site-to-Site VPN
 * AWS Direct Connect Gateway to Transit Gateway association
 * AWS Transit Gateway attachment to VPC
 * AWS Transit Gateway attachment to Direct Connect Gateway
-* AWS Customer Gateway
-* AWS Site-to-Site VPN
 * AWS Transit Gateway attachment to VPN
 * Azure ExpressRoute Circuit
-* Azure ExpressRoute Virtual Gateway
+* Azure ExpressRoute Virtual Network Gateway
 * Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
+* Azure VPN Virtual Network Gateway
 * Azure VNet Gateway Subnet
 * Azure Local Gateway
-* Azure VPN Virtual Gateway Connections
+* Azure VPN Virtual Network Gateway Connections
 
 ## Prerequisites
 
@@ -102,7 +103,7 @@ The following resources are deployed:
 * From the Megaport portal select select the MCR Looking Glass.
 * The route table should contain the AWS VPC CIDR, in this example 10.1.0.0/16, and the Transit gateway CIDR, in this example 10.254.1.0/24.
 
-### Step 9 - Deploy Azure ExpressRoute Circuit
+### Step 9 - Azure ExpressRoute Circuit
 
 * From the Azure portal search for **ExpressRoute** in the search bar.
 * Select **ExpressRoute circuits**.
@@ -115,4 +116,25 @@ The following resources are deployed:
 * Select **Peering location**, in this example - Sydney.
 * Select **Bandwidth**, in this example - 50Mbps.
 * Leave SKU as **Standard**, and billing model as **Metered**.
+* Select **Review + create** > **Create**.
+* When deployment is complete select **Go to resource**.
+* From the ExpressRoute details copy the service key for use in the next step.
+
+### Step 10 - Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
+
+* From the Megaport portal select **+Connection** on the newly created MCR.
+* Follow the workflow to deploy the Azure ExpressRoute VXC: [Link](https://docs.megaport.com/cloud/megaport/microsoft/#creating-an-expressroute-connection)
+
+### Step 11 - Azure ExpressRoute Gateway
+
+* From the Azure portal search for **Virtual network gateways** in the search bar.
+* Select **Virtual network gateways** > **Create virtual network gateway**.
+* Enter a **Name**.
+* Select a **Region**, in this example - Australia East.
+* Select **Gateway type** > **ExpressRoute**.
+* Select **SKU**, in this example - Standard. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
+* Select **Virtual network**.
+* Enter **Gateway subnet address range**, in this example - 10.2.254.0/24.
+* Select **Create new** Public IP address.
+* Enter Public IP address name.
 * Select **Review + create** > **Create**.
