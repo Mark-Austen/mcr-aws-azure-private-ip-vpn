@@ -4,7 +4,6 @@ The following resources are deployed:
 
 * Megaport Cloud Router (MCR)
 * Megaport Virtual Cross Connect (VXC) to AWS Direct Connect
-* Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
 * AWS Direct Connect Hosted Connection
 * AWS Direct Connect Gateway
 * AWS Transit Gateway
@@ -18,6 +17,7 @@ The following resources are deployed:
 * AWS Transit Gateway attachment to VPN
 * Azure Resource Group
 * Azure ExpressRoute Circuit
+* Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
 * Azure ExpressRoute Virtual Gateway
 * Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
 * Azure VNet
@@ -42,4 +42,23 @@ The following resources are deployed:
 
 * From the Megaport portal select **+Connection** on the newly created MCR. 
 * Follow the workflow to deploy the AWS Direct Connect Hosted Connection VXC: [Link](https://docs.megaport.com/cloud/mcr/aws/#creating-a-hosted-connection)
+
+### Step 3 - Deploy AWS Direct Connect Gateway
+
+* From the AWS console search for **Direct Connect** in the search bar.
+* Select **Direct Connect**.
+* Select **Direct Connect gateway**.
+* Select **Create Direct Connect gateway**.
+* Enter a Name and Amazon-side ASN for the Direct Connect gateway.
+* Select **Create Direct Connect gateway**.
+
+### Step 4 - Deploy AWS Transit Gateway
+
+* From the AWS console search for **Transit gateways** in the search bar.
+* Select **Transit gateways**.
+* Select **Create transit gateways**.
+* Enter a Name tag and Transit gateway CIDR block, e.g. 10.255.1.0/24.
+* Seleect **Create transit gateway**.
+
+
 
