@@ -174,9 +174,18 @@ The following resources are deployed:
 * Select **Configure BGP** Enabled.
 * In this example use default BGP ASN 65515.
 * Enter two **Custom Azure APIPA BGP IP address** - 169.254.21.2, and 169.254.22.2.
-* Select **Review + create** > **Create**.
+* Select **Review + create** > **Create**. (Deployment time is ~20min)
 
-### Step 14 - AWS Customer Gateway
+### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
+
+* From the Azure portal search for **Virtual network gateways** in the search bar.
+* Select the VPN Virtual network gateway created in step 14.
+* In the left hand column select **Configuration**.
+* Select **Gateway Private IPs** Enabled.
+* Select **Save**.
+* (GW redeployed)?
+
+### Step 16 - AWS Customer Gateway
 
 *
 
