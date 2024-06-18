@@ -90,5 +90,11 @@ The following resources are deployed:
 * Select **Additional settings**.
 * Enter **Your router peer ip**, in this example the IP address of the MCR - 192.168.100.1/30.
 * Enter **Amazon router peer ip**, in this example - 192.168.100.2/30.
+* Enter the **BGP Authentication key** created in step 6.
 * Select **Create virtual interface**.
 * Select the Virtual interface from the interface list, the state will transition to **available** and BGP status to **up**.
+
+### Step 8 - Confirm MCR has recevied AWS Prefixes
+
+* From the Megaport portal select select the MCR Looking Glass.
+* The route table should contain the AWS VPC CIDR, in this example 10.1.0.0/16, and the Transit gateway CIDR, in this example 10.254.1.0/24.
