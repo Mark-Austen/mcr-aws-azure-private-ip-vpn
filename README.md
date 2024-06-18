@@ -138,3 +138,25 @@ The following resources are deployed:
 * Select **Create new** Public IP address.
 * Enter Public IP address name.
 * Select **Review + create** > **Create**.
+
+### Step 12 - Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
+
+* From the Azure portal search for **ExpressRoute** in the search bar.
+* Select **ExpressRoute circuits**.
+* Select the ExpressRoute Circuit created in step 9.
+* In the left hand column select **Connections**.
+* Select **Add**.
+* Select **Connection type** ExpressRoute.
+* Enter a name for the connection.
+* Select **Next**.
+* Select **Virtual network gateway** created in step 11.
+* Select **ExpressRoute circuit** created in step 9.
+* Select **Review + create** > **Create**.
+
+### Step 12 - Confirm MCR has recevied Azure Prefixes
+
+* From the Megaport portal select select the MCR Looking Glass.
+* The route table should contain the Azure VNet CIDR, in this example 10.2.0.0/16.
+
+
+
