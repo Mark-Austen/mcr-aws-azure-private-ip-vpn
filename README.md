@@ -8,7 +8,7 @@ The following resources are deployed:
 * AWS Direct Connect Gateway
 * AWS Direct Connect Transit VIF
 * AWS Transit Gateway
-* AWS Customer Gateway
+* AWS VPN - Customer Gateway
 * AWS Site-to-Site VPN
 * AWS Direct Connect Gateway to Transit Gateway association
 * AWS Transit Gateway attachment to VPC
@@ -182,10 +182,29 @@ The following resources are deployed:
 * Select the VPN Virtual network gateway created in step 14.
 * In the left hand column select **Configuration**.
 * Select **Gateway Private IPs** Enabled.
-* Select **Save**.
-* (GW redeployed)?
+* Select **Save**. (Virtual network gateway redeploys ~20min)
+* From the Virtual network gateway Overview page select **See more** - copy the **First Private IP address** for the next step, in this example - 10.2.0.6.
 
-### Step 16 - AWS Customer Gateway
+### Step 16 - AWS VPN Customer Gateway
 
-*
+* From the AWS console search for **VPC** in the search bar.
+* Select **VPC**.
+* In the left hand column select Customer Gateways.
+* Select **Create customer gateway**.
+* Enter the **BGP ASN** of the Azure VPN Virtual Network Gateway.
+* Enter the **IP address** of the Azure VPN Virtual Network Gateway.
+* Select **Create customer gateway**.
+
+### Step 16 - AWS Site-to-Site VPN
+
+* From the AWS console search for **VPC** in the search bar.
+* Select **VPC**.
+* In the left hand column select Virtual private gateways.
+* Select **Site-to-Site VPN connections** > **Create VPN connection**.
+* Select **Target gateway tyope** - Transit gateway.
+* Select the Transit gateway created in step 2.
+* Select the **Customer gateway ID** created in step 16.
+* Select **Outside IP address type** - PrivateIpv4.
+* Select the **Transport transit gateway attachment ID** created in step step 3.
+* 
 
