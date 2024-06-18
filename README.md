@@ -1,4 +1,4 @@
-This is a guide to deploy a Private IP VPN between AWS and Azure using the Megaport Cloud Router (MCR) as the private transport layer.
+This is a guide to deploy a Private IP IPSec VPN between AWS and Azure using the Megaport Cloud Router (MCR) as the private transport layer.
 
 The following resources are deployed:
 
