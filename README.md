@@ -152,6 +152,7 @@ The following resources are deployed:
 * Select **Virtual network gateway** created in step 11.
 * Select **ExpressRoute circuit** created in step 9.
 * Select **Review + create** > **Create**.
+* After deployment 
 
 ### Step 13 - Confirm MCR has recevied Azure Prefixes
 
