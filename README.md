@@ -3,8 +3,7 @@ This is a guide to deploy a Private IP VPN between AWS and Azure using the Megap
 The following resources are deployed:
 
 * Megaport Cloud Router (MCR)
-* Megaport Virtual Cross Connect (VXC) to AWS Direct Connect
-* AWS Direct Connect Hosted Connection
+* Megaport Virtual Cross Connect (VXC) to AWS Direct Connect Hosted Connection
 * AWS Direct Connect Gateway
 * AWS Transit Gateway
 * AWS Direct Connect Gateway to Transit Gateway association
