@@ -22,8 +22,8 @@ The following resources are deployed:
 
 ## Prerequisites
 
-* AWS VPC [Link](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html#create-vpc-and-other-resources)
-* Azure VNet [Link](https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
+* AWS VPC: [Link](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html#create-vpc-and-other-resources)
+* Azure VNet: [Link](https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 
 ## Deployment Instructions
 
