@@ -180,7 +180,9 @@ The following resources are deployed:
 * Enter two **Custom Azure APIPA BGP IP address**, in this example 169.254.21.2, and 169.254.22.2.
 * Select **Review + create** > **Create**. (Deployment time is ~20min)
 
-![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/3221fa88-59f3-48b7-8a3f-d43cde0fdc8b)
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/b3745ece-41c2-4be1-bcb2-565cf10f35c1)
+
 
 ### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
 
@@ -190,11 +192,15 @@ The following resources are deployed:
 * Enable **Gateway Private IPs**.
 * Select **Save**. (Virtual network gateway redeploys ~20min).
 
-![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/e863e8bd-3117-4f28-8f99-d7afc3b0ad24)
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/5e11149d-a0b3-44f6-bff7-35a1994a29ce)
+
 
 * From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example 10.2.0.6.
 
-![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/d8204ae2-0d52-4a76-a0ae-dd1b2d977ad0)
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/2efc92ce-3540-4f2c-a4b0-7b740fceb551)
+
 
 ### Step 16 - AWS VPN Customer Gateway
 
