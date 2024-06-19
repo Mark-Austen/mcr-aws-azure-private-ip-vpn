@@ -189,9 +189,12 @@ The following resources are deployed:
 * In the left hand column select **Configuration**.
 * Enable **Gateway Private IPs**.
 * Select **Save**. (Virtual network gateway redeploys ~20min).
-* From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example `10.2.0.6`.
 
 <img width="1223" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/69579631-6a89-457d-ace4-800e01808b42">
+
+* From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example `10.2.0.6`.
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/77fbd7af-970a-4d22-b8d9-31e29fcd0f8d)
 
 ### Step 16 - AWS VPN Customer Gateway
 
