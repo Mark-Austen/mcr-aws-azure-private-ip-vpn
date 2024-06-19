@@ -134,7 +134,7 @@ The following resources are deployed:
 * Select **Gateway type** > **ExpressRoute**.
 * Select **SKU**, in this example Standard. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
 * Select **Virtual network**.
-* Enter **Gateway subnet address range**, in this example 10.2.254.0/24.
+* Enter **Gateway subnet address range**, in this example 10.2.0.0/24.
 * Select **Create new** Public IP address.
 * Enter a **Public IP address** name.
 * Select **Review + create** > **Create**.
