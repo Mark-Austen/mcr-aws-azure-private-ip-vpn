@@ -180,7 +180,7 @@ The following resources are deployed:
 * Enter two **Custom Azure APIPA BGP IP address**, in this example 169.254.21.2, and 169.254.22.2.
 * Select **Review + create** > **Create**. (Deployment time is ~20min)
 
-<img src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/95cb70df-7df6-4bb9-8e27-a922ed22dc67" width="100" height="100">
+<img src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/95cb70df-7df6-4bb9-8e27-a922ed22dc67" width="1000" height="1000">
 
 ### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
 
