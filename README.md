@@ -47,7 +47,7 @@ The following resources are deployed:
 * Select **Transit gateways**.
 * Select **Create transit gateways**.
 * Ensure the correct region is selected.
-* Enter a Name tag and Transit gateway CIDR block, in this guide lets use 10.254.1.0/24.
+* Enter a Name tag and Transit gateway CIDR block, in this guide 10.254.1.0/24.
 * Select **Create transit gateway**.
 
 ### Step 3 - AWS Direct Connect Gateway to Transit Gateway association
@@ -56,7 +56,7 @@ The following resources are deployed:
 * Select **Direct Connect**.
 * Select **Direct Connect gateway**.
 * Select Direct Connect gateway created in step 1.
-* Select Gateway associations > Associated gateway.
+* Select **Gateway associations** > **Associate gateway**.
 * Select the Transit gateway created in step 2.
 * Enter the AWS VPC CIDR and the Transit gateway CIDR in **Allowed Prefixes**.
 
@@ -66,7 +66,7 @@ The following resources are deployed:
 * Select **VPC**.
 * In the left hand column select **Transit gateway attachements**.
 * Select **Create transit gateway attachement**.
-* Select Transit gateway ID and VPC ID from the drop boxes.
+* Select Transit gateway ID created in step 2, and VPC ID from the drop boxes.
 * Select **Create transit gateway attachement**.
 
 ### Step 5 - Megaport Cloud Router
@@ -83,17 +83,17 @@ The following resources are deployed:
 * From the AWS console search for **Direct Connect** in the search bar.
 * Select **Direct Connect**.
 * Select **Connections**.
-* Select Virtual Cross Connect (VXC) created in step 6.
+* Select the Virtual Cross Connect (VXC) created in step 6.
 * Select **Accept** > **Confirm**.
-* After state changes to available select **Create virtual interface**.
+* After the state changes to available select **Create virtual interface**.
 * Select Virtual interface type **Transit**.
 * Enter **Virtual interface name**.
-* Select accepted **Connection**.
+* Select the **Connection**.
 * Select **Direct Connect gateway** deployed in step 1.
 * Enter **BGP ASN** of the MCR, in this example ASN 133937.
 * Select **Additional settings**.
-* Enter **Your router peer ip**, in this example the IP address of the MCR - 192.168.100.1/30.
-* Enter **Amazon router peer ip**, in this example - 192.168.100.2/30.
+* Enter **Your router peer ip**, in this example the IP address of the MCR 192.168.100.1/30.
+* Enter **Amazon router peer ip**, in this example 192.168.100.2/30.
 * Enter the **BGP Authentication key** created in step 6.
 * Select **Create virtual interface**.
 * Select the Virtual interface from the interface list, the state will transition to **available** and BGP status to **up**.
@@ -110,15 +110,15 @@ The following resources are deployed:
 * Select **Create ExpressRoute**.
 * Select **Subscription**.
 * Select **Resource Group**.
-* Select **Region**, in this example - Australia East.
+* Select **Region**, in this example Australia East.
 * Enter **Circuit name**.
 * Select Megaport in the **Provider** box.
-* Select **Peering location**, in this example - Sydney.
-* Select **Bandwidth**, in this example - 50Mbps.
+* Select **Peering location**, in this example Sydney.
+* Select **Bandwidth**, in this example 50Mbps.
 * Leave SKU as **Standard**, and billing model as **Metered**.
 * Select **Review + create** > **Create**.
 * When deployment is complete select **Go to resource**.
-* From the ExpressRoute details copy the service key for use in the next step.
+* From the ExpressRoute details page copy the service key for use in the next step.
 
 ### Step 10 - Megaport Virtual Cross Connect (VXC) to Azure ExpressRoute
 
@@ -130,13 +130,13 @@ The following resources are deployed:
 * From the Azure portal search for **Virtual network gateways** in the search bar.
 * Select **Virtual network gateways** > **Create virtual network gateway**.
 * Enter a **Name**.
-* Select a **Region**, in this example - Australia East.
+* Select a **Region**, in this example Australia East.
 * Select **Gateway type** > **ExpressRoute**.
-* Select **SKU**, in this example - Standard. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
+* Select **SKU**, in this example Standard. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
 * Select **Virtual network**.
-* Enter **Gateway subnet address range**, in this example - 10.2.254.0/24.
+* Enter **Gateway subnet address range**, in this example 10.2.254.0/24.
 * Select **Create new** Public IP address.
-* Enter Public IP address name.
+* Enter a **Public IP address** name.
 * Select **Review + create** > **Create**.
 
 ### Step 12 - Azure ExpressRoute to ExpressRoute Virtual Gateway Connection
@@ -152,7 +152,6 @@ The following resources are deployed:
 * Select **Virtual network gateway** created in step 11.
 * Select **ExpressRoute circuit** created in step 9.
 * Select **Review + create** > **Create**.
-* After deployment 
 
 ### Step 13 - Confirm MCR has recevied Azure Prefixes
 
@@ -166,14 +165,14 @@ The following resources are deployed:
 * Enter a **Name**.
 * Select a **Region**, in this example - Australia East.
 * Select **Gateway type** > **VPN**.
-* Select **SKU**, in this example - VpnGw1. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
+* Select **SKU**, in this example VpnGw1. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
 * Select **Generation**, in this example **Generation 1**.
 * Select **Virtual network**.
 * Enter a **Public IP Address** name.
 * Select **Enable active-active mode** Disabled.
 * Select **Configure BGP** Enabled.
 * In this example use default BGP ASN 65515.
-* Enter two **Custom Azure APIPA BGP IP address** - 169.254.21.2, and 169.254.22.2.
+* Enter two **Custom Azure APIPA BGP IP address** 169.254.21.2, and 169.254.22.2.
 * Select **Review + create** > **Create**. (Deployment time is ~20min)
 
 ### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
