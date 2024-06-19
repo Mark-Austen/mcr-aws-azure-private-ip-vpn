@@ -1,3 +1,4 @@
+
 This is a guide to deploy a Private IP VPN between AWS and Azure using the Megaport Cloud Router (MCR) as the private transport layer.
 
 The following resources are deployed:
@@ -25,7 +26,6 @@ The following resources are deployed:
 ## Topology
 
 ![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/a3fd5488-e34a-446b-bd54-bda03e82432b)
-
 
 ## Prerequisites
 
