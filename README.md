@@ -268,8 +268,8 @@ The following resources are deployed:
 * Enter the AWS Tunnel 1 outside IP address, in this example `10.254.1.53`.
 * Select **Next: Advanced >**
 * Select **Yes** for **Configure BGP settings**.
-* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
-* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.21.1.
+* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example `65534`.
+* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example `169.254.21.1`.
 * Select **Next: Review + create** > **Create**.
 
 ### Step 21  - Azure Local Network Gateway (2 of 2)
