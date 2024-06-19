@@ -194,7 +194,7 @@ The following resources are deployed:
 * Enter the **IP address** of the Azure VPN Virtual Network Gateway.
 * Select **Create customer gateway**.
 
-### Step 16 - AWS Site-to-Site VPN
+### Step 17 - AWS Site-to-Site VPN
 
 * From the AWS console search for **VPC** in the search bar.
 * Select **VPC**.
@@ -212,7 +212,7 @@ The following resources are deployed:
 * Select **Create VPN connection**.
 * From the main VPN page select the VPN, from the **Tunnel state** details copy the Tunnel 1 and Tunnel 2 outside IP address for later use.
 
-### Step 17 - Megaport Cloud Router Static Routes
+### Step 18 - Megaport Cloud Router Static Routes
 
 * From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
@@ -224,7 +224,7 @@ The following resources are deployed:
 * Enter a **Static Route** for the Azure Tunnel outside IP address, in this example 10.2.0.6/32, use the **Peer IP** as the **Next Hop**.
 * Select **Save** > **Close**.
 
-### Step 18 - Megaport Cloud Router Prefix Filter Lists
+### Step 19 - Megaport Cloud Router Prefix Filter Lists
 
 * From the Megaport portal select the MCR **MCR Details** button.
 * Select **Prefix Filter Lists**.
@@ -251,7 +251,7 @@ The following resources are deployed:
 * Select **Tools** in the top menu bar > **MCR Looking Glass**.
 * Check **Neighbour Routes** for each BGP session to ensure only the tunnel outside prefixes are advertsied.
 
-### Step  - Azure Local Network Gateway (1 of 2)
+### Step 20  - Azure Local Network Gateway (1 of 2)
 
 * From the Azure portal search for **Local network gateways** in the search bar.
 * Select **Local network gateways**.
@@ -267,7 +267,7 @@ The following resources are deployed:
 * Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.21.1.
 * Select **Next: Review + create** > **Create**.
 
-### Step  - Azure Local Network Gateway (2 of 2)
+### Step 21  - Azure Local Network Gateway (2 of 2)
 
 * From the Azure portal search for **Local network gateways** in the search bar.
 * Select **Local network gateways**.
@@ -282,6 +282,39 @@ The following resources are deployed:
 * Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
 * Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.22.1.
 * Select **Next: Review + create** > **Create**.
+
+### Step 22  - Azure VPN Virtual Network Gateway - VPN Connection (1 of 2)
+
+* From the Azure portal search for **Virtual network gateways** in the search bar.
+* Select the VPN Virtual network gateway.
+* Select **Connections** > **Add**.
+* Select **Connection type** as **Site-to-site VPN (IPsec).
+* Select **Next : Settings >**
+* Select the VPN Virtual network gateway in the drop down box.
+* Select the first Local network gatewat in the drop down box.
+* Enter the **Shared Key(PSK)**
+* Tick **Use Azure Private IP Address**
+* Tick **Enable BGP**
+* Tick **Enable Custom BGP Addresses**
+* Select **Review + create** > **Create**.
+
+### Step 23  - Azure VPN Virtual Network Gateway - VPN Connection (2 of 2)
+
+* From the Azure portal search for **Virtual network gateways** in the search bar.
+* Select the VPN Virtual network gateway.
+* Select **Connections** > **Add**.
+* Select **Connection type** as **Site-to-site VPN (IPsec).
+* Select **Next : Settings >**
+* Select the VPN Virtual network gateway in the drop down box.
+* Select the second Local network gatewat in the drop down box.
+* Enter the **Shared Key(PSK)**
+* Tick **Use Azure Private IP Address**
+* Tick **Enable BGP**
+* Tick **Enable Custom BGP Addresses**
+* Select **Review + create** > **Create**.
+
+
+
 
 
 
