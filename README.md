@@ -296,6 +296,7 @@ The following resources are deployed:
 * Tick **Use Azure Private IP Address**
 * Tick **Enable BGP**
 * Tick **Enable Custom BGP Addresses**
+* In the **Primary Custom BGP Address** box select 169.254.21.2.
 * Select **Review + create** > **Create**.
 
 ### Step 23  - Azure VPN Virtual Network Gateway - VPN Connection (2 of 2)
@@ -311,6 +312,7 @@ The following resources are deployed:
 * Tick **Use Azure Private IP Address**
 * Tick **Enable BGP**
 * Tick **Enable Custom BGP Addresses**
+* In the **Primary Custom BGP Address** box select 169.254.22.2.
 * Select **Review + create** > **Create**.
 
 
