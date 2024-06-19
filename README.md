@@ -181,8 +181,8 @@ The following resources are deployed:
 * Select the VPN Virtual network gateway created in step 14.
 * In the left hand column select **Configuration**.
 * Enable **Gateway Private IPs**.
-* Select **Save**. (Virtual network gateway redeploys ~20min)
-* From the Virtual network gateway Overview page select **See more** copy the **First Private IP address** for the next step, in this example 10.2.0.6.
+* Select **Save**. (Virtual network gateway redeploys ~20min).
+* From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example 10.2.0.6.
 
 ### Step 16 - AWS VPN Customer Gateway
 
@@ -200,14 +200,14 @@ The following resources are deployed:
 * Select **VPC**.
 * In the left hand column select Virtual private gateways.
 * Select **Site-to-Site VPN connections** > **Create VPN connection**.
-* Select **Target gateway tyope** - Transit gateway.
+* Select **Target gateway type** Transit gateway.
 * Select the Transit gateway created in step 2.
 * Select the **Customer gateway ID** created in step 16.
-* Select **Outside IP address type** - PrivateIpv4.
+* Select **Outside IP address type** PrivateIpv4.
 * Select the **Transport transit gateway attachment ID** created in step step 3.
-* Expand **Tunnel 1 options** > enter **Inside IPv4 CIDR for tunnel 1**, in this example - 169.254.21.0/30 (AWS takes lower IP).
+* Expand **Tunnel 1 options** > enter **Inside IPv4 CIDR for tunnel 1**, in this example 169.254.21.0/30 (AWS takes lower IP).
 * Enter **Pre-shared key for tunnel 1**.
-* Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example - 169.254.22.0/30 (AWS takes lower IP).
+* Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example 169.254.22.0/30 (AWS takes lower IP).
 * Enter **Pre-shared key for tunnel 2**.
 * Select **Create VPN connection**.
 
