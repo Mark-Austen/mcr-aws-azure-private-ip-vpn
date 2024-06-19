@@ -52,7 +52,7 @@ The following resources are deployed:
 * Select **Transit gateways**.
 * Select **Create transit gateways**.
 * Ensure the correct region is selected.
-* Enter a Name tag and Transit gateway CIDR block, in this guide `10.254.1.0/24`.
+* Enter a Name tag and Transit gateway CIDR block, in this example `10.254.1.0/24`.
 * Select **Create transit gateway**.
 
 ### Step 3 - AWS Direct Connect Gateway to Transit Gateway association
@@ -95,10 +95,10 @@ The following resources are deployed:
 * Enter **Virtual interface name**.
 * Select the **Connection**.
 * Select **Direct Connect gateway** deployed in step 1.
-* Enter **BGP ASN** of the MCR, in this example ASN 133937.
+* Enter **BGP ASN** of the MCR, in this example ASN `133937`.
 * Select **Additional settings**.
-* Enter **Your router peer ip**, in this example the IP address of the MCR 192.168.100.1/30.
-* Enter **Amazon router peer ip**, in this example 192.168.100.2/30.
+* Enter **Your router peer ip**, in this example the IP address of the MCR `192.168.100.1/30`.
+* Enter **Amazon router peer ip**, in this example `192.168.100.2/30`.
 * Enter the **BGP Authentication key** created in step 6.
 * Select **Create virtual interface**.
 * Select the Virtual interface from the interface list, the state will transition to **available** and BGP status to **up**.
@@ -106,7 +106,7 @@ The following resources are deployed:
 ### Step 8 - Confirm MCR has recevied AWS Prefixes
 
 * From the Megaport portal select select the MCR Looking Glass.
-* The route table should contain the AWS VPC CIDR, in this example 10.1.0.0/16, and the Transit gateway CIDR, in this example 10.254.1.0/24.
+* The route table should contain the AWS VPC CIDR, in this example `10.1.0.0/16`, and the Transit gateway CIDR, in this example `10.254.1.0/24`.
 
 ### Step 9 - Azure ExpressRoute Circuit
 
@@ -115,11 +115,11 @@ The following resources are deployed:
 * Select **Create ExpressRoute**.
 * Select **Subscription**.
 * Select **Resource Group**.
-* Select **Region**, in this example Australia East.
+* Select **Region**, in this example `Australia East`.
 * Enter **Circuit name**.
 * Select Megaport in the **Provider** box.
-* Select **Peering location**, in this example Sydney.
-* Select **Bandwidth**, in this example 50Mbps.
+* Select **Peering location**, in this example `Sydney`.
+* Select **Bandwidth**, in this example `50Mbps`.
 * Leave SKU as **Standard**, and billing model as **Metered**.
 * Select **Review + create** > **Create**.
 * When deployment is complete select **Go to resource**.
@@ -139,7 +139,7 @@ The following resources are deployed:
 * Select **Gateway type** > **ExpressRoute**.
 * Select **SKU**, in this example Standard. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
 * Select **Virtual network**.
-* Enter **Gateway subnet address range**, in this example 10.2.0.0/24.
+* Enter **Gateway subnet address range**, in this example `10.2.0.0/24`.
 * Select **Create new** Public IP address.
 * Enter a **Public IP address** name.
 * Select **Review + create** > **Create**.
@@ -161,7 +161,7 @@ The following resources are deployed:
 ### Step 13 - Confirm MCR has recevied Azure Prefixes
 
 * From the Megaport portal select select the MCR Looking Glass.
-* The route table should contain the Azure VNet CIDR, in this example 10.2.0.0/16.
+* The route table should contain the Azure VNet CIDR, in this example `10.2.0.0/16`.
 
 ### Step 14 - Azure VPN Virtual Network Gateway
 
@@ -170,14 +170,14 @@ The following resources are deployed:
 * Enter a **Name**.
 * Select a **Region**, in this example Australia East.
 * Select **Gateway type** > **VPN**.
-* Select **SKU**, in this example VpnGw1. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
-* Select **Generation**, in this example **Generation 1**.
+* Select **SKU**, in this example `VpnGw1`. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
+* Select **Generation**, in this example `Generation 1`.
 * Select **Virtual network**.
 * Enter a **Public IP Address** name.
 * Select **Enable active-active mode** Disabled.
 * Select **Configure BGP** Enabled.
-* In this example use default BGP ASN 65515.
-* Enter two **Custom Azure APIPA BGP IP address**, in this example 169.254.21.2, and 169.254.22.2.
+* In this example use default BGP ASN `65515`.
+* Enter two **Custom Azure APIPA BGP IP address**, in this example `169.254.21.2`, and `169.254.22.2`.
 * Select **Review + create** > **Create**. (Deployment time is ~20min)
 
 ### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
@@ -187,7 +187,7 @@ The following resources are deployed:
 * In the left hand column select **Configuration**.
 * Enable **Gateway Private IPs**.
 * Select **Save**. (Virtual network gateway redeploys ~20min).
-* From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example 10.2.0.6.
+* From the Virtual network gateway overview page select **See more** copy the **First Private IP address** for the next step, in this example `10.2.0.6`.
 
 ### Step 16 - AWS VPN Customer Gateway
 
@@ -210,9 +210,9 @@ The following resources are deployed:
 * Select the **Customer gateway ID** created in step 16.
 * Select **Outside IP address type** PrivateIpv4.
 * Select the **Transport transit gateway attachment ID** created in step step 3.
-* Expand **Tunnel 1 options** > enter **Inside IPv4 CIDR for tunnel 1**, in this example 169.254.21.0/30 (AWS takes lower IP).
+* Expand **Tunnel 1 options** > enter **Inside IPv4 CIDR for tunnel 1**, in this example `169.254.21.0/30` (AWS takes lower IP).
 * Enter **Pre-shared key for tunnel 1**.
-* Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example 169.254.22.0/30 (AWS takes lower IP).
+* Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example `169.254.22.0/30` (AWS takes lower IP).
 * Enter **Pre-shared key for tunnel 2**.
 * Select **Create VPN connection**.
 * From the main VPN page select the VPN, from the **Tunnel state** details copy the Tunnel 1 and Tunnel 2 outside IP address for later use.
@@ -221,12 +221,12 @@ The following resources are deployed:
 
 * From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
-* Enter a **Static Route** for the AWS Tunnel 1 outside IP address, in this example 10.254.1.53/32, use the **Peer IP** as the **Next Hop**.
-* Enter a **Static Route** for the AWS Tunnel 2 outside IP address, in this example 10.254.1.57/32, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the AWS Tunnel 1 outside IP address, in this example `10.254.1.53/32`, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the AWS Tunnel 2 outside IP address, in this example `10.254.1.57/32`, use the **Peer IP** as the **Next Hop**.
 * Select **Save** > **Close**.
 * Select the Azure Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
-* Enter a **Static Route** for the Azure Tunnel outside IP address, in this example 10.2.0.6/32, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the Azure Tunnel outside IP address, in this example `10.2.0.6/32`, use the **Peer IP** as the **Next Hop**.
 * Select **Save** > **Close**.
 
 ### Step 19 - Megaport Cloud Router Prefix Filter Lists
@@ -235,11 +235,11 @@ The following resources are deployed:
 * Select **Prefix Filter Lists**.
 * Select **New List**.
 * Enter name **Azure-Export**.
-* Enter an exact match entry for 10.254.1.50/32, and 10.254.1.57/32.
+* Enter an exact match entry for `10.254.1.50/32`, and `10.254.1.57/32`.
 * Select **Save**
 * Select **New List**.
 * Enter name **AWS-Export**.
-* Enter an exact match entry for 10.2.0.6/32.
+* Enter an exact match entry for `10.2.0.6/32`.
 * Select **Save** > **Close**.
 * Select the AWS Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
@@ -265,7 +265,7 @@ The following resources are deployed:
 * Select **Resource Group**.
 * Select a **Region**, in this example Australia East.
 * Enter a **Name**.
-* Enter the AWS Tunnel 1 outside IP address, in this example 10.254.1.53.
+* Enter the AWS Tunnel 1 outside IP address, in this example `10.254.1.53`.
 * Select **Next: Advanced >**
 * Select **Yes** for **Configure BGP settings**.
 * Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
@@ -281,11 +281,11 @@ The following resources are deployed:
 * Select **Resource Group**.
 * Select a **Region**, in this example Australia East.
 * Enter a **Name**.
-* Enter the AWS Tunnel 2 outside IP address, in this example 10.254.1.57.
+* Enter the AWS Tunnel 2 outside IP address, in this example `10.254.1.57`.
 * Select **Next: Advanced >**
 * Select **Yes** for **Configure BGP settings**.
-* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
-* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.22.1.
+* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example `65534`.
+* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example `169.254.22.1`.
 * Select **Next: Review + create** > **Create**.
 
 ### Step 22  - Azure VPN Virtual Network Gateway - VPN Connection (1 of 2)
@@ -301,7 +301,7 @@ The following resources are deployed:
 * Tick **Use Azure Private IP Address**
 * Tick **Enable BGP**
 * Tick **Enable Custom BGP Addresses**
-* In the **Primary Custom BGP Address** box select 169.254.21.2.
+* In the **Primary Custom BGP Address** box select `169.254.21.2`.
 * Select **Review + create** > **Create**.
 
 ### Step 23  - Azure VPN Virtual Network Gateway - VPN Connection (2 of 2)
@@ -317,7 +317,7 @@ The following resources are deployed:
 * Tick **Use Azure Private IP Address**
 * Tick **Enable BGP**
 * Tick **Enable Custom BGP Addresses**
-* In the **Primary Custom BGP Address** box select 169.254.22.2.
+* In the **Primary Custom BGP Address** box select `169.254.22.2`.
 * Select **Review + create** > **Create**.
 
 
