@@ -22,6 +22,11 @@ The following resources are deployed:
 * Azure Local Gateway
 * Azure VPN Virtual Network Gateway Connections
 
+## Topology
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/a3fd5488-e34a-446b-bd54-bda03e82432b)
+
+
 ## Prerequisites
 
 * Megaport account
