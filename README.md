@@ -163,7 +163,7 @@ The following resources are deployed:
 * From the Azure portal search for **Virtual network gateways** in the search bar.
 * Select **Virtual network gateways** > **+Create**.
 * Enter a **Name**.
-* Select a **Region**, in this example - Australia East.
+* Select a **Region**, in this example Australia East.
 * Select **Gateway type** > **VPN**.
 * Select **SKU**, in this example VpnGw1. SKU types: [Link](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways#gwsku)
 * Select **Generation**, in this example **Generation 1**.
@@ -172,7 +172,7 @@ The following resources are deployed:
 * Select **Enable active-active mode** Disabled.
 * Select **Configure BGP** Enabled.
 * In this example use default BGP ASN 65515.
-* Enter two **Custom Azure APIPA BGP IP address** 169.254.21.2, and 169.254.22.2.
+* Enter two **Custom Azure APIPA BGP IP address**, in this example 169.254.21.2, and 169.254.22.2.
 * Select **Review + create** > **Create**. (Deployment time is ~20min)
 
 ### Step 15 - Azure VPN Virtual Network Gateway - Enable Gateway Private IPs
