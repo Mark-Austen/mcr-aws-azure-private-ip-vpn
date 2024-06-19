@@ -210,4 +210,49 @@ The following resources are deployed:
 * Expand **Tunnel 2 options** > enter **Inside IPv4 CIDR for tunnel 2**, in this example 169.254.22.0/30 (AWS takes lower IP).
 * Enter **Pre-shared key for tunnel 2**.
 * Select **Create VPN connection**.
+* From the main VPN page select the VPN, from the **Tunnel state** details copy the Tunnel 1 and Tunnel 2 outside IP address for later use.
+
+### Step 17 - Megaport Cloud Router Static Routes
+
+* From the Megaport portal select 
+* 
+
+
+### Step  - Azure Local Network Gateway (1 of 2)
+
+* From the Azure portal search for **Local network gateways** in the search bar.
+* Select **Local network gateways**.
+* Select **Create local network gateway**.
+* Select **Subscription**.
+* Select **Resource Group**.
+* Select a **Region**, in this example Australia East.
+* Enter a **Name**.
+* Enter the AWS Tunnel 1 outside IP address, in this example 10.254.1.53.
+* Select **Next: Advanced >**
+* Select **Yes** for **Configure BGP settings**.
+* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
+* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.21.1.
+* Select **Next: Review + create** > **Create**.
+
+### Step  - Azure Local Network Gateway (2 of 2)
+
+* From the Azure portal search for **Local network gateways** in the search bar.
+* Select **Local network gateways**.
+* Select **Create local network gateway**.
+* Select **Subscription**.
+* Select **Resource Group**.
+* Select a **Region**, in this example Australia East.
+* Enter a **Name**.
+* Enter the AWS Tunnel 2 outside IP address, in this example 10.254.1.57.
+* Select **Next: Advanced >**
+* Select **Yes** for **Configure BGP settings**.
+* Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example 65534.
+* Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example 169.254.22.1.
+* Select **Next: Review + create** > **Create**.
+
+
+
+
+
+
 
