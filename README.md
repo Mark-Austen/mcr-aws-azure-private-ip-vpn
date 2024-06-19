@@ -214,9 +214,42 @@ The following resources are deployed:
 
 ### Step 17 - Megaport Cloud Router Static Routes
 
-* From the Megaport portal select 
-* 
+* From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
+* Select **A-End**.
+* Enter a **Static Route** for the AWS Tunnel 1 outside IP address, in this example 10.254.1.53/32, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the AWS Tunnel 2 outside IP address, in this example 10.254.1.57/32, use the **Peer IP** as the **Next Hop**.
+* Select **Save** > **Close**.
+* Select the Azure Virtual Cross Connect **VXC Details** button.
+* Select **A-End**.
+* Enter a **Static Route** for the Azure Tunnel outside IP address, in this example 10.2.0.6/32, use the **Peer IP** as the **Next Hop**.
+* Select **Save** > **Close**.
 
+### Step 18 - Megaport Cloud Router Prefix Filter Lists
+
+* From the Megaport portal select the MCR **MCR Details** button.
+* Select **Prefix Filter Lists**.
+* Select **New List**.
+* Enter name **Azure-Export**.
+* Enter an exact match entry for 10.254.1.50/32, and 10.254.1.57/32.
+* Select **Save**
+* Select **New List**.
+* Enter name **AWS-Export**.
+* Enter an exact match entry for 10.2.0.6/32.
+* Select **Save** > **Close**.
+* Select the AWS Virtual Cross Connect **VXC Details** button.
+* Select **A-End**.
+* Select **Edit** for the BGP session.
+* Select **Filters**
+* Under **Export Prefix Filter** select **Permit List**, in the drop down box select **AWS-Export**.
+* Select **Update** > **Close**.
+* Select the Azure Virtual Cross Connect **VXC Details** button.
+* Select **A-End**.
+* Select **Edit** for the BGP session.
+* Select **Filters**
+* Under **Export Prefix Filter** select **Permit List**, in the drop down box select **Azure-Export**.
+* Select **Update** > **Close**.
+* Select **Tools** in the top menu bar > **MCR Looking Glass**.
+* Check **Neighbour Routes** for each BGP session to ensure only the tunnel outside prefixes are advertsied.
 
 ### Step  - Azure Local Network Gateway (1 of 2)
 
