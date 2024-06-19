@@ -180,9 +180,9 @@ The following resources are deployed:
 * From the Azure portal search for **Virtual network gateways** in the search bar.
 * Select the VPN Virtual network gateway created in step 14.
 * In the left hand column select **Configuration**.
-* Select **Gateway Private IPs** Enabled.
+* Enable **Gateway Private IPs**.
 * Select **Save**. (Virtual network gateway redeploys ~20min)
-* From the Virtual network gateway Overview page select **See more** - copy the **First Private IP address** for the next step, in this example - 10.2.0.6.
+* From the Virtual network gateway Overview page select **See more** copy the **First Private IP address** for the next step, in this example 10.2.0.6.
 
 ### Step 16 - AWS VPN Customer Gateway
 
