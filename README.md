@@ -285,7 +285,7 @@ The following resources are deployed:
 
 <img width="1270" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/0ce771f1-2f2d-4520-965c-8dbd99315186">
 
-<img width="1299" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/4a8bfa8a-66d7-4d1f-8f90-c1dea0bc7162">
+<img width="1282" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/7e1115ff-6594-4c1c-962e-cc280d5708de">
 
 <img width="1296" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/6b794d18-75a0-429a-952d-3903c6744fb2">
 
