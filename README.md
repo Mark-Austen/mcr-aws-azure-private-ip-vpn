@@ -277,7 +277,7 @@ The following resources are deployed:
 * Select **Tools** in the top menu bar > **MCR Looking Glass**.
 * Check **Neighbour Routes** for each BGP session to ensure only the tunnel outside prefixes are advertsied.
 
-<img width="1278" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/db1d1a43-afda-4011-85e2-dc1fd9bf3997">
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/a18cfb41-0fdc-4e7e-9f00-3bb36f87a2b0)
 
 <img width="1271" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/931d786e-961d-46aa-bf26-a93a973538c6">
 
@@ -365,7 +365,9 @@ The following resources are deployed:
 
 <img width="1269" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/2044ff11-d0c5-445d-8279-6819c737533f">
 
+### Step 24  - Verification
 
+* 
 
 
 
