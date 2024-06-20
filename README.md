@@ -246,6 +246,8 @@ The following resources are deployed:
 * Enter a **Static Route** for the Azure Tunnel outside IP address, in this example `10.2.0.6/32`, use the **Peer IP** as the **Next Hop**.
 * Select **Save** > **Close**.
 
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/2b723e14-4f6f-4866-900f-f5c325ca0dfa)
+
 ### Step 19 - Megaport Cloud Router Prefix Filter Lists
 
 * From the Megaport portal select the MCR **MCR Details** button.
