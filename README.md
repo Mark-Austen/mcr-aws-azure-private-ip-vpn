@@ -334,7 +334,7 @@ The following resources are deployed:
 * From the Azure portal search for **Virtual network gateways** in the search bar.
 * Select the VPN Virtual network gateway.
 * Select **Connections** > **Add**.
-* Select **Connection type** as **Site-to-site VPN (IPsec).
+* Select **Connection type** as Site-to-site VPN (IPsec).
 * Select **Next : Settings >**
 * Select the VPN Virtual network gateway in the drop down box.
 * Select the first Local network gatewat in the drop down box.
@@ -344,6 +344,8 @@ The following resources are deployed:
 * Tick **Enable Custom BGP Addresses**
 * In the **Primary Custom BGP Address** box select `169.254.21.2`.
 * Select **Review + create** > **Create**.
+
+<img width="1265" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/aab3145e-e43b-4b26-a96e-60b02b1aa242">
 
 ### Step 23  - Azure VPN Virtual Network Gateway - VPN Connection (2 of 2)
 
@@ -360,6 +362,9 @@ The following resources are deployed:
 * Tick **Enable Custom BGP Addresses**
 * In the **Primary Custom BGP Address** box select `169.254.22.2`.
 * Select **Review + create** > **Create**.
+
+<img width="1269" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/2044ff11-d0c5-445d-8279-6819c737533f">
+
 
 
 
