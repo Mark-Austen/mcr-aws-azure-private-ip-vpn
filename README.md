@@ -248,6 +248,8 @@ The following resources are deployed:
 
 ![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/2b723e14-4f6f-4866-900f-f5c325ca0dfa)
 
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/b2f7ad3c-8580-48c9-ba18-794c85efb322)
+
 ### Step 19 - Megaport Cloud Router Prefix Filter Lists
 
 * From the Megaport portal select the MCR **MCR Details** button.
