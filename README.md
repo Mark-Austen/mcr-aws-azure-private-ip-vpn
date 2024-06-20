@@ -206,6 +206,8 @@ The following resources are deployed:
 * Enter the **IP address** of the Azure VPN Virtual Network Gateway.
 * Select **Create customer gateway**.
 
+<img width="1287" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/5f05bbf7-c8c6-455a-9882-c4d2391ccebf">
+
 ### Step 17 - AWS Site-to-Site VPN
 
 * From the AWS console search for **VPC** in the search bar.
