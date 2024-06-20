@@ -367,7 +367,19 @@ The following resources are deployed:
 
 ### Step 24  - Verification
 
-* 
+* From the Azure portal in **Virtual network gateways** > **gateway name* > **Connections**, status for both VPN connections should be **Connected**.
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/30894433-4948-42a3-9272-73ee43247a05)
+
+* From the AWS console in **VPC** > **VPN connections** > **VPN ID*, the tunnel state status for both tunnels should be **Up**.
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/fb655873-a60b-4914-b28e-ccee7b6fcd48)
+
+* From the AWS console in **VPC** > **Transit gateway route tables** > **Transit gateway route table ID*, in the **Routes** tab, there are two routes of significance, in this example the Azure VNet CIDR `10.2.0.0/16`reachable via the VPN attachment, and the Azure VPN tunnel outside IP address `10.2.0.6` reachable via the Direct Connect Gateway attachment.
+
+<img width="1305" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/86c71031-9a1d-4b44-94c7-4dfb1ed12467">
+
+
 
 
 
