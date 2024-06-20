@@ -25,7 +25,7 @@ The following resources are deployed:
 
 ## Architecture Overview
 
-![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/a3fd5488-e34a-446b-bd54-bda03e82432b)
+<img width="1377" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/1a4bf430-1e7d-45a5-b367-79f6bd8145ab">
 
 ## Prerequisites
 
