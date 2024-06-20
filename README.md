@@ -267,15 +267,27 @@ The following resources are deployed:
 * Select **Edit** for the BGP session.
 * Select **Filters**
 * Under **Export Prefix Filter** select **Permit List**, in the drop down box select **AWS-Export**.
-* Select **Update** > **Close**.
+* Select **Update** > **Save** > **Close**.
 * Select the Azure Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
 * Select **Edit** for the BGP session.
 * Select **Filters**
 * Under **Export Prefix Filter** select **Permit List**, in the drop down box select **Azure-Export**.
-* Select **Update** > **Close**.
+* Select **Update** > **Save** > **Close**.
 * Select **Tools** in the top menu bar > **MCR Looking Glass**.
 * Check **Neighbour Routes** for each BGP session to ensure only the tunnel outside prefixes are advertsied.
+
+<img width="1278" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/db1d1a43-afda-4011-85e2-dc1fd9bf3997">
+
+<img width="1271" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/931d786e-961d-46aa-bf26-a93a973538c6">
+
+<img width="1270" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/6c3825e1-9469-479c-b1d5-c469aa95a3d1">
+
+<img width="1270" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/0ce771f1-2f2d-4520-965c-8dbd99315186">
+
+<img width="1299" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/4a8bfa8a-66d7-4d1f-8f90-c1dea0bc7162">
+
+<img width="1296" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/6b794d18-75a0-429a-952d-3903c6744fb2">
 
 ### Step 20  - Azure Local Network Gateway (1 of 2)
 
