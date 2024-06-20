@@ -226,6 +226,12 @@ The following resources are deployed:
 * Select **Create VPN connection**.
 * From the main VPN page select the VPN, from the **Tunnel state** details copy the Tunnel 1 and Tunnel 2 outside IP address for later use.
 
+<img width="1295" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/cbb76964-2ce1-4c53-bb39-8131ffd8d0e7">
+
+<img width="1322" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/6a544437-b9cd-40ff-b9d2-8d9ccd5c046b">
+
+<img width="1317" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/4d8b5488-48ab-4b27-a0ca-29db74767036">
+
 ### Step 18 - Megaport Cloud Router Static Routes
 
 * From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
