@@ -305,6 +305,10 @@ The following resources are deployed:
 * Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example `169.254.21.1`.
 * Select **Next: Review + create** > **Create**.
 
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/de24c5e9-d142-4076-bdf7-5c1f9274545c)
+
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/753ff4b2-d2d1-43d1-9dbf-049a0e350865)
+
 ### Step 21  - Azure Local Network Gateway (2 of 2)
 
 * From the Azure portal search for **Local network gateways** in the search bar.
@@ -320,6 +324,10 @@ The following resources are deployed:
 * Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example `65534`.
 * Enter the **BGP peer IP address** which is the inside IP address of Tunnel 1, in this example `169.254.22.1`.
 * Select **Next: Review + create** > **Create**.
+
+<img width="1224" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/8af73ebe-8601-4004-a5aa-37aef1c8c434">
+
+<img width="1225" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/0271f1b1-6f59-4c92-bf3b-4d956bd9d622">
 
 ### Step 22  - Azure VPN Virtual Network Gateway - VPN Connection (1 of 2)
 
