@@ -232,6 +232,8 @@ The following resources are deployed:
 
 <img width="1317" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/4d8b5488-48ab-4b27-a0ca-29db74767036">
 
+![image](https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/f5cd2f05-6988-4098-9098-9738ade10ab7)
+
 ### Step 18 - Megaport Cloud Router Static Routes
 
 * From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
