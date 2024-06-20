@@ -238,8 +238,8 @@ The following resources are deployed:
 
 * From the Megaport portal select the AWS Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
-* Enter a **Static Route** for the AWS Tunnel 1 outside IP address, in this example `10.254.1.53/32`, use the **Peer IP** as the **Next Hop**.
-* Enter a **Static Route** for the AWS Tunnel 2 outside IP address, in this example `10.254.1.57/32`, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the AWS Tunnel 1 outside IP address, in this example `10.254.1.18/32`, use the **Peer IP** as the **Next Hop**.
+* Enter a **Static Route** for the AWS Tunnel 2 outside IP address, in this example `10.254.1.80/32`, use the **Peer IP** as the **Next Hop**.
 * Select **Save** > **Close**.
 * Select the Azure Virtual Cross Connect **VXC Details** button.
 * Select **A-End**.
@@ -252,7 +252,7 @@ The following resources are deployed:
 * Select **Prefix Filter Lists**.
 * Select **New List**.
 * Enter name **Azure-Export**.
-* Enter an exact match entry for `10.254.1.50/32`, and `10.254.1.57/32`.
+* Enter an exact match entry for `10.254.1.18/32`, and `10.254.1.80/32`.
 * Select **Save**
 * Select **New List**.
 * Enter name **AWS-Export**.
@@ -282,7 +282,7 @@ The following resources are deployed:
 * Select **Resource Group**.
 * Select a **Region**, in this example Australia East.
 * Enter a **Name**.
-* Enter the AWS Tunnel 1 outside IP address, in this example `10.254.1.53`.
+* Enter the AWS Tunnel 1 outside IP address, in this example `10.254.1.18`.
 * Select **Next: Advanced >**
 * Select **Yes** for **Configure BGP settings**.
 * Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example `65534`.
@@ -298,7 +298,7 @@ The following resources are deployed:
 * Select **Resource Group**.
 * Select a **Region**, in this example Australia East.
 * Enter a **Name**.
-* Enter the AWS Tunnel 2 outside IP address, in this example `10.254.1.57`.
+* Enter the AWS Tunnel 2 outside IP address, in this example `10.254.1.80`.
 * Select **Next: Advanced >**
 * Select **Yes** for **Configure BGP settings**.
 * Enter the **Autonomous system number (ASN)** of the AWS Transit Gateway, in this example `65534`.
