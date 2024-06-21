@@ -39,7 +39,8 @@ In this guide the following resources are deployed:
 * Azure ExpressRoute Circuit has a connection to the ExpressRoute Virtual Network Gateway. BGP ASNs for the MSEE routers is 12076 and is not configurable, the ExpressRoute Virtual Network Gateway does not have an ASN defined.
 * Azure VPN Virtual Network Gateway provides the IP VPN functionality across ExpressRoute by use of outside private IP addressing on the IPSec tunnels. The tunnel outside private IP address is dynamically allocated from the VNet Gateway subnet.
 * Azure VPN Gateway private IP addressing inside of the tunnels must be allocated from the 169.254.21.0/24 and 169.254.22.0/24 ranges.
-* The TGW and Azure 
+* To ensure the TGW and VPN Virtual Network Gateway route the tunnels across Direct Connect and ExpressRoute, and VPC/VNet traffic inside of the tunnels, static routes for outside tunnel IP addressing needs to be set up on the MCRs. The static routes ensure the most specifc match occurs over the larger VPC/VNet CIDR routes.
+* 
 
 ## Prerequisites
 
