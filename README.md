@@ -29,6 +29,15 @@ In this guide the following resources are deployed:
 
 <img width="1377" alt="image" src="https://github.com/Mark-Austen/mcr-aws-azure-private-ip-vpn/assets/117334224/1a4bf430-1e7d-45a5-b367-79f6bd8145ab">
 
+* Megaport Cloud Router (MCR) provides the virtual routing connection between AWS Direct Connect and Azure ExpressRoute Circuit cloud on-ramps.
+* Virtual Cross Connects (VXCs) are a point to point connection from the MCR to AWS Direct Connect and Azure ExpressRoute Circuit.
+* BGP Peering is used between the MCR and the AWS Direct Connect Gateway/Transit VIF and the Azure ExpressRoute MSEE routers.
+* Azure ExpressRoute Circuit provides a primary and secondary connection, in this example only the primary is used.
+* AWS Direct Connect Gateway is associated with the Transit Gateway. BGP ASNs for the DGW and TGW have been configured as shown on the diagram.
+* Transit Gateway provides the IP VPN functionality across Direct Connect by use of outside private IP addressing on the IPSec tunnels. It also provides the routing between the VPCs, Direct Connect, and IP VPN.
+* Azure ExpressRoute Circuit has a connection to the ExpressRoute Virtual Network Gateway. BGP ASNs for the MSEE routers is 12076 and is not configurable, the ExpressRoute Virtual Network Gateway does not have an ASN defined.
+* Azure VPN Virtual Network Gateway provides the IP VPN functionality across ExpressRoute by use of outside private IP addressing on the IPSec tunnels.
+
 ## Prerequisites
 
 * Megaport account
