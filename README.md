@@ -1,7 +1,9 @@
 
 This is a guide to deploy a Private IP VPN between AWS and Azure using the Megaport Cloud Router (MCR) as the private transport layer.
 
-The following resources are deployed:
+AWS and Azure Private IP VPNs enable the use of IPSec VPNs across AWS Direct Connect and Azure ExpressRoute. Intergrated with the Megaport Cloud Router, traffic is encrypted across Megaports global private network. This solution provides secure, private, high performance multicloud network connectivity.
+
+In this guide the following resources are deployed:
 
 * Megaport Cloud Router (MCR)
 * Megaport Virtual Cross Connect (VXC) to AWS Direct Connect Hosted Connection
