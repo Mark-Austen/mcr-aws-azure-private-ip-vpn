@@ -34,9 +34,12 @@ In this guide the following resources are deployed:
 * BGP Peering is used between the MCR and the AWS Direct Connect Gateway/Transit VIF and the Azure ExpressRoute MSEE routers.
 * Azure ExpressRoute Circuit provides a primary and secondary connection, in this example only the primary is used.
 * AWS Direct Connect Gateway is associated with the Transit Gateway. BGP ASNs for the DGW and TGW have been configured as shown on the diagram.
-* Transit Gateway provides the IP VPN functionality across Direct Connect by use of outside private IP addressing on the IPSec tunnels. It also provides the routing between the VPCs, Direct Connect, and IP VPN.
+* Transit Gateway provides the IP VPN functionality across Direct Connect by use of outside private IP addressing on the IPSec tunnels. It also provides the routing between the VPCs, Direct Connect, and IP VPN. The tunnel outside private IP address is dynamically allocated from the TGW CIDR range.
+* AWS IP VPN consists of two IP VPN tunnels spread across different availability zones. Azure VPN Virtual Network Gateways can be deployed as active-passive, active-active, and AZ resilient. In this example active-passive is deployed.
 * Azure ExpressRoute Circuit has a connection to the ExpressRoute Virtual Network Gateway. BGP ASNs for the MSEE routers is 12076 and is not configurable, the ExpressRoute Virtual Network Gateway does not have an ASN defined.
-* Azure VPN Virtual Network Gateway provides the IP VPN functionality across ExpressRoute by use of outside private IP addressing on the IPSec tunnels.
+* Azure VPN Virtual Network Gateway provides the IP VPN functionality across ExpressRoute by use of outside private IP addressing on the IPSec tunnels. The tunnel outside private IP address is dynamically allocated from the VNet Gateway subnet.
+* Azure VPN Gateway private IP addressing inside of the tunnels must be allocated from the 169.254.21.0/24 and 169.254.22.0/24 ranges.
+* The TGW and Azure 
 
 ## Prerequisites
 
