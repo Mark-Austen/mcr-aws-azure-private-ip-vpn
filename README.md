@@ -1,4 +1,4 @@
-# AWS - Azure Private IP VPN with Megaport MCR
+# AWS - Azure Private IP VPN with the Megaport Cloud Router
 
 This is a guide to deploy a Private IP VPN between AWS and Azure using the Megaport Cloud Router (MCR) as the private transport layer.
 
